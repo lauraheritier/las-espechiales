@@ -1,7 +1,7 @@
 import data from './data.json';
 
 export function getProductsByCategory(category) {
-  const products = data.filter((product) => product.category === category);
+  const products = data.filter((product) => product.category == category);
   return products;
 }
 

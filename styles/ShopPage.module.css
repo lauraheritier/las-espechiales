@@ -1,7 +1,13 @@
 .title {
   font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0 1rem 1rem;
+  margin: 0;
+  border-bottom: 3px solid rgb(249,130, 108);
+  padding: 8px;
+  color: #323232;
+  font-weight: 800;
+  text-transform: initial;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .container {
@@ -10,8 +16,15 @@
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2.5rem 1rem;
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards > div {
+  max-width: 320px;
+  margin: 24px 16px;
+  box-shadow: 0 7px 30px -10px #96aab480;
+  border-radius: 8px;
 }

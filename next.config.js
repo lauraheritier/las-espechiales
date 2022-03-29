@@ -1,5 +1,5 @@
 module.exports = {
-  images: {
-    domains: ['imgur.com'],
-  },
+  /*images: {
+    domains: ['instagram.fcor2-2.fna.fbcdn.net', 'localhost'],
+  },*/
 };

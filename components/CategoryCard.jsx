@@ -9,7 +9,6 @@ const CategoryCard = ({ image, name }) => {
       <Link href={`/category/${name.toLowerCase()}`}>
         <div className={styles.info}>
           <h3>{name}</h3>
-          <p>SHOP NOW</p>
         </div>
       </Link>
     </div>

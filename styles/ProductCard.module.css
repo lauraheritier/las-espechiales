@@ -2,6 +2,17 @@
   display: flex;
   flex-direction: column;
 }
+.imgcontainer img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+.imgcontainer {
+  position: relative;
+  width: 320px;
+  height: 200px;
+}
 
 .title {
   font-size: 1rem;
@@ -11,19 +22,31 @@
 .category {
   font-size: 0.8rem;
   text-transform: uppercase;
+  z-index: 999;
+  position: absolute;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgb(249,130, 108);
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
-
+.details {
+  padding: 8px;
+}
 .button {
   width: 100%;
   margin-top: 0.5rem;
   padding: 0.75rem 0;
   background: transparent;
   text-transform: uppercase;
-  border: 2px solid black;
+  border: 2px solid rgb(249,130, 108);
   cursor: pointer;
+  color: #323232;
+  border-radius: 8px;
 }
 
 .button:hover {
-  background: black;
+  background: rgb(249,130, 108);
   color: white;
 }

@@ -1,24 +1,9 @@
 .container {
-  padding: 2rem;
+  padding: 8px;
   text-align: center;
+  margin-bottom: 80px;
 }
 
-.header {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header div {
-  flex: 1;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  border-bottom: 2px solid black;
-  margin-bottom: 2rem;
-}
 
 .body {
   display: flex;
@@ -26,22 +11,108 @@
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
+  -webkit-box-shadow: 0 7px 30px -10px #96aab480;
+  box-shadow: 0 7px 30px -10px #96aab480;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px 16px;
 }
-
-.body > * {
-  flex: 1;
+.imagecontainer {
+  display: flex;
+  align-items: center;
 }
 
 .image {
-  width: 100px;
+  width: 64px;
+  height: 64px;
+  position: relative;
 }
-
+.image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.detailed {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 4px;
+}
+.detailed p {
+  margin-bottom: 0;
+  text-align: left;
+}
+.buttons {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
 .buttons > * {
-  width: 25px;
-  height: 30px;
-  background-color: black;
-  color: white;
-  border: none;
-  margin: 0.5rem;
-  font-size: 1rem;
+  color: #323232;
+  padding: 0 4px;
+}
+.buttons span {
+  padding: 0 8px;
+    border-bottom: 1px solid #ececec;
+    font-weight: bold;
+}
+.remove {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+.remove * {
+  color: #323232;
+}
+.remove p {
+  margin: 16px 0 0 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #323232;
+}
+.total {
+  max-width: 800px;
+  color: #323232;
+  margin: 16px auto;
+  text-align: right;
+  padding: 0 8px;
+}
+.form {
+  max-width: 800px;
+  margin: 24px auto;
+}
+.form > p {
+  font-weight: bold;
+}
+.whatsapp {
+  text-decoration: none;
+  color: #ffffff;
+    border-radius: 8px;
+    border: 0;
+    background-color: #f9826c;
+    padding: 8px;
+    transition: ease-in-out 0.2s;
+    margin-top: 16px;
+    font-size: 24px;
+}
+.whatsapp:hover {
+  background-color: #e67561;
+}
+.items {
+  margin: 40px auto;
+}
+.items > p {
+  border-top: 3px solid rgb(249,130, 108);
+  padding-top: 16px;
+  font-weight: bold;
+}
+.items a {
+  cursor: pointer;
 }

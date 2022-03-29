@@ -8,15 +8,22 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className={styles}>
-      <Image src={product.image} height={300} width={220} />
-      <h4 className={styles.title}>{product.product}</h4>
+      <div className={styles.imgcontainer}>
       <h5 className={styles.category}>{product.category}</h5>
-      <p>$ {product.price}</p>
+      <Image src={product.image} layout="fill" />
+      </div>
+      <div className={styles.details}>
+      <h4 className={styles.title}>{product.product}</h4>
+      
+      <p>{product.description}</p>
+      <p>${product.price}</p>
+        </div>     
+      
       <button
         onClick={() => dispatch(addToCart(product))}
         className={styles.button}
       >
-        Add to Cart
+        Agregar al carrito
       </button>
     </div>
   );
